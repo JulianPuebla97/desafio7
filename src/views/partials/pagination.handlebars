@@ -1,3 +1,14 @@
+<div class="productsPerPage">
+  <h3>Products per page</h3>
+  <div class="buttons">
+    <a class="button" href="/products?{{#if query}}query={{query}}&{{/if}}limit=5">5</a>
+    <a class="button" href="/products?{{#if query}}query={{query}}&{{/if}}limit=10">10</a>
+    <a class="button" href="/products?{{#if query}}query={{query}}&{{/if}}limit=15">15</a>
+    <a class="button" href="/products?{{#if query}}query={{query}}&{{/if}}limit=20">20</a>
+  </div>
+</div>
+
+
 <div class="pagination">
   {{#if hasPrevPage}}
   <a href={{prevLink}} class="prevNext"> Previous </a>
@@ -25,4 +36,3 @@
   <a disabled class="disabled"> Next </a>
   {{/if}}
 </div>
-

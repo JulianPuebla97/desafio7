@@ -1,18 +1,18 @@
-<h1>Login</h1>
 
 <form action="/api/user/login" method="POST" class="loginForm">
-  <label for="email">Email: </label>
-  <input type="email" name="email" id="email">
+<h1 class="login-title">Login</h1>
+  <div class="form-group">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" name="email" id="email" class="form-input">
+  </div>
 
-  <label for="passwor">Password: </label>
-  <input type="password" name="password" id="password">
-
-  <button type="submit">Login</button>
-  
-  <p>or</p>
-  <a href="/user/register">Register</a>
-  <p>or</p>
-  <a href="/api/user/github">GitHub</a>
+  <div class="form-group">
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" name="password" id="password" class="form-input">
+  </div>
+  <button type="submit" class="register-link">Login</button>
+  <div class="login-options">
+    <a href="/user/register" class="register-link">Register</a>
+    <a href="/api/user/github" class="github-link">Login with GitHub</a>
+  </div>
 </form>
-
-

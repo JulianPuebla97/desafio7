@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration:none
 }
 
 body {
@@ -38,6 +39,25 @@ body {
 
 .navBar li a:hover {
   color: #ffcc00;
+}
+
+
+.login {
+  text-align: center;
+}
+
+.login a,
+.register a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
+
+.login a:hover,
+.register a:hover {
+  color: #a98700;
 }
 
 h1 {
@@ -92,6 +112,64 @@ h1 {
 
 .card button:hover {
   background-color: #555;
+}
+
+.cardCart {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardCart:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardCart img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cardCart h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cardCart p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.cardCart .price {
+  font-weight: bold;
+}
+
+.cardCart input.quantity {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cardCart button.delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardCart button.delete:hover {
+  background-color: #c82333;
 }
 
 .products {
@@ -330,7 +408,52 @@ h1 {
   border-bottom: 1px solid;
   padding: 0 0.5rem;
 }
+.login-options {
+  text-align: center;
+  
+}
+.login-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-link,
+.github-link {
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #646464a3;
+  border-radius: 5px;
+  background-color: #555;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-link:hover,
+.github-link:hover {
+  background-color: #333;
+  color: #ffcc00;
+}
 .userInfo {
   color: #ffffff;
   font-size: 6px;
@@ -342,4 +465,35 @@ h1 {
 
 .userProfile {
   text-align: center;
+}
+.productsPerPage {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productsPerPage h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.productsPerPage .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.productsPerPage .button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.productsPerPage .button:hover {
+  background-color: #42414189;
+  color: #ffcc00;
 }
